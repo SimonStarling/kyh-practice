@@ -4,3 +4,4 @@ print("Jag har tidigare läst vid Högskolan i Borås. Där har jag läst ett an
 print("Varför jag har valt att läsa till Programvarutestare är för att jag tycker kvalitetsäkring av programm är "
       "intressant\n samt en viktig del i utvecklingsarbetet av ny mjukvara!")
 print("Testa för att se om synken fungerar")
+print("New Change")
