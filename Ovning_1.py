@@ -1,7 +1,18 @@
-print("Hej! Jag heter Simon och jag är uppväxt i Gråbo, Lerums kommun.\n")
-print("Jag har tidigare läst vid Högskolan i Borås. Där har jag läst ett antal programmeringskurser med C# som "
-      "programmeringsspråk.\n Har även kört lite SQL och HTML + en testkurs\n")
-print("Varför jag har valt att läsa till Programvarutestare är för att jag tycker kvalitetsäkring av programm är "
-      "intressant\n samt en viktig del i utvecklingsarbetet av ny mjukvara!")
-print("Testa för att se om synken fungerar")
-print("Nu testade vi att ta bort massa text")
+import random
+
+n = random.randint(1, 20)
+print("I'm thinking of a number between 1 and 20. Guess which?")
+
+while True:
+    text = input("Your guess: ")
+    as_number = int(text)
+
+    if as_number == n:
+        print("Correct!")
+        break
+
+    if as_number < n:
+        print("Wrong, my number is higher... Try again!")
+
+    if as_number > n:
+        print("Wrong, my number is lower... Try again!")
