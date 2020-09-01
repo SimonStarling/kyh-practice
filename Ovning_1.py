@@ -15,20 +15,24 @@ def ask_number():
 
 def mainloop(guess_number):
     while True:
-        tal = ask_number()
+        tal = ask_number()  # Kallar på funktioner ask_number
         if tal == n:
-            print("Korrekt! Ditt antal gissningar var " + str(guess_number))
+
             guess_number += 1
+            return guess_number
             break
 
         if tal < n:
             print("Fel, värdet är högre... Försök igen!")
             guess_number += 1
+
             print("Antal gissningar: " + str(guess_number))
         if tal > n:
             print("Fel, värdet är mindre.. Försök igen!")
             guess_number += 1
+
             print("Antal gissningar: " + str(guess_number))
 
 
-mainloop(guess_number)
+guess_number = mainloop(guess_number)
+print("Korrekt! Ditt antal gissningar var " + str(guess_number))
