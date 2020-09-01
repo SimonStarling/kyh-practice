@@ -7,24 +7,28 @@ print("Jag tänker på ett värde mellan 1 till 100. Kan du gissa vilket?")
 guess_number = 0
 
 
+def ask_number():
+    text = input("Ditt svar: ")
+    tal = int(text)
+    return tal
+
+
 def mainloop(guess_number):
-
     while True:
-        text = input("Ditt svar: ")
-        as_number = int(text)
-
-        if as_number == n:
+        tal = ask_number()
+        if tal == n:
             print("Korrekt! Ditt antal gissningar var " + str(guess_number))
             guess_number += 1
             break
 
-        if as_number < n:
+        if tal < n:
             print("Fel, värdet är högre... Försök igen!")
             guess_number += 1
             print("Antal gissningar: " + str(guess_number))
-        if as_number > n:
+        if tal > n:
             print("Fel, värdet är mindre.. Försök igen!")
             guess_number += 1
             print("Antal gissningar: " + str(guess_number))
+
 
 mainloop(guess_number)
