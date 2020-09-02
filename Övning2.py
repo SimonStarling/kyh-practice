@@ -1,4 +1,4 @@
-from cal import * # Hämtar alla funktioner från modull cal.
+from cal import *  # Hämtar alla funktioner från modul cal.
 
 
 def run():
@@ -23,7 +23,7 @@ def run():
     if answer == "4":
         result = divide(a, b)
         print("Result = " + str(result))
-        # if __name__ == '__main__': - Denna kod gör inget och hindrar programmet från att köra.
 
 
-run()
+if __name__ == '__main__':
+    run()
