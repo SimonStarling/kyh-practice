@@ -1,4 +1,4 @@
-from cal import *
+from cal import * # Hämtar alla funktioner från modull cal.
 
 
 def run():

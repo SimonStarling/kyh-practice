@@ -1,3 +1,4 @@
+# Hanterar beräkningar för main-modullen Övning2
 
 def add(a, b):
     result = a + b
