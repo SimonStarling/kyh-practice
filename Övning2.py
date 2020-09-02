@@ -1,4 +1,4 @@
-from cal import *  # Hämtar alla funktioner från modul cal.
+from cal import add, subtract, multiply, divide
 
 
 def run():
@@ -22,7 +22,8 @@ def run():
         print("Result = " + str(result))
     if answer == "4":
         result = divide(a, b)
-        print("Result = " + str(result))
+
+    print(f"{result}")
 
 
 if __name__ == '__main__':
