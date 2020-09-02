@@ -26,13 +26,13 @@ def mainloop(guess_number):
             print("Fel, värdet är högre... Försök igen!")
             guess_number += 1
 
-            print("Antal gissningar: " + str(guess_number))
+            print(f"Antal gissningar: {guess_number}")
         if tal > n:
             print("Fel, värdet är mindre.. Försök igen!")
             guess_number += 1
 
-            print("Antal gissningar: " + str(guess_number))
+            print(f"Antal gissningar: {guess_number}")
 
 
 guess_number = mainloop(guess_number)
-print("Korrekt! Ditt antal gissningar var " + str(guess_number))
+print(f"Korrekt! Ditt antal gissningar var {guess_number}")
