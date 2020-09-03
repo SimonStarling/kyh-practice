@@ -8,7 +8,11 @@ def game(number_of_questions, max_value):
         a = random.randint(1, max_value)
         b = random.randint(1, max_value)
         answer = input(f"{a} + {b}")
-        number = int(answer)
+        try:
+            number = int(answer)
+        except ValueError:
+            print("Du angav inte en siffra! Ditt svar blir 0")
+            number = 0
         if number == a + b:
             print("Rätt!")
             correct_answers += 1
@@ -19,6 +23,14 @@ def game(number_of_questions, max_value):
 
 
 if __name__ == '__main__':
-    number = int(input("Hur många frågor?"))
-    max_value = int(input("Största tal?"))
+    try:
+        number = int(input("Hur många frågor?"))
+    except ValueError:
+        print("Du skrev inte in ett tal. Antal frågor = 3")
+        number = 3
+    try:
+        max_value = int(input("Största tal?"))
+    except ValueError:
+        print("Du angav inte ett heltal. Högsta tal är satt till 10")
+        max_value = 10
     game(number, max_value)
