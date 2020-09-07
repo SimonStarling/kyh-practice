@@ -10,10 +10,9 @@ def main():
 
     students = input("Ange namn med kommatecken emellan: ").split(",")  # Ber användaren skriva in namn och kommatecken
 
-    print(students)
     for name in students:
 
-        if is_it_too_long(name):
+        if is_it_too_long(name, max_length):
             print(f"{name.title()} är för långt!")
 
 
