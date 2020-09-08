@@ -13,15 +13,15 @@ COLOR = ["red", "blue", "green", "yellow", "black"]
 
 
 def run():
-    basket = ['volvo', 'is', 'red', 'an', 'orange', 'apple', 'black']
+    basket = input("Skriv lista: ").split(",") # gör om inputen till en lista som bryter på ,
+
     cars = []
-
     fruits = []
-
     color = []
     rest = []
 
     for item in basket:
+        item = item.strip()  # Tar bort onödiga mellanslag
         if item in CARS:
             cars.append(item)
 
