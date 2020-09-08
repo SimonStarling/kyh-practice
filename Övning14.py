@@ -42,6 +42,7 @@ def run():
 
 def write_things(items, kind):
     print(f"{kind.upper()}  ({len(items)}st)")
+    # items = sorted(items) # Kommer också sortera samtliga items i listorna.
     for item in items:
         print(f" {item}")
 
