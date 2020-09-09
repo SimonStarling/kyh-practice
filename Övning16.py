@@ -11,7 +11,7 @@ def case():
         line = line.strip()
         for phrase in keep_phares:
             if phrase in line:
-                important.append(phrase)
+                important.append(line)
                 break
 
     print('\n'.join(important))
