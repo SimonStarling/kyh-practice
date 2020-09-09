@@ -4,8 +4,11 @@
     runners_in_order = “Lisa Lasse Louise Leopold Lova Love Lennart Lena Lisette Linus”.split()
     vem = input(“Ange löpare du söker placering för'''
 
+
 # Wordcounter
 def main():
+    vowels = "aeiouy"
+    vowels_count = 0
 
     def wordcount(txt):
         return len(txt.split())
@@ -13,11 +16,11 @@ def main():
     text = input("Skriv in text: ")
     count = wordcount(text)
 
+    for c in text:
+        if c in vowels:
+            vowels_count += 1
 
-    print(f'Antal ord som angivits: {count}')
+    print(f'Antal ord som angivits: {count} \n Antal Vokaler{vowels_count}')
 
 
 main()
-
-# Loremlista
-def lorem():
