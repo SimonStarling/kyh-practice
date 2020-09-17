@@ -1,0 +1,14 @@
+import requests
+from pprint import pprint
+
+r = requests.get('https://proagile.se/api/publicEvents')  # Hämtar data via en URL
+data = r.json()     # låtor oss läsa in data från r i jason format. Data blir i detta fallet en Lista (type())
+
+
+def main():
+    for item in data:
+        pprint(item['startDate'])
+
+
+if __name__ == '__main__':
+    main()
