@@ -1,5 +1,6 @@
 import webbrowser
 from pathlib import Path
+# POCO!
 
 OUTPUT_PATH = Path("djur.html")
 TEMPLATE_PATH = Path('djur_template.html')
