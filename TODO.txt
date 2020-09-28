@@ -1,1 +1,0 @@
-["['Starta laptop\\nStarta Zoom\\nStarta Python\\nLyssna p√• Olof\\nSkriv Kod\\nTa rast', 'Drick kaffe']", 'PÂ igen']

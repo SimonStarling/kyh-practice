@@ -44,7 +44,7 @@ def alt_3():
 
 
 def alt_4():
-    pass
+                 break
 
 
 if __name__ == '__main__':
