@@ -20,3 +20,17 @@ print(rev_text("ABCDEF"))
 
 def big_L(text):
     pass
+
+# 41 - Tankeövning.
+def fn(a):
+    print(a)
+    a = 2
+    print(a)
+    return  a
+
+a = 1
+print(a) # Kommer printa 1
+fn(1)   # Kommer printa 1 sedan 2
+b = a + fn(1) # Kör igenom fn igen och returnerar värdet från a. B får sedan värdet av a + return av fn(). Som blir 3.
+print(b)
+print(a)    # Kommer printa 1
