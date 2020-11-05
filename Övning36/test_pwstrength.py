@@ -14,3 +14,8 @@ def test_password_with_length_9_gives_0_points():
 def test_password_with_specialchar_gives_1_points():
     pw = "!!"
     assert compute_strength(pw) == 0
+
+
+def test_password_bug():
+    pw = "!" * 10
+    assert compute_strength(pw) == 0
